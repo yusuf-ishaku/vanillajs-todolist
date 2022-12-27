@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-it!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Balsamiq+Sans&family=Dancing+Script:wght@600&family=Montserrat&family=Pacifico&family=Roboto:wght@300;400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="to-do.css">
+</head>
+<body>
+    <div class="container-fluid central">
+        <div class="my-body">
+           <div class="intro">
+              <span>Do-It!</span>
+           </div>
+           <div class="col-6 col-md-6 col-sm-6 to-do-aspect">
+             <input style="font-family:'Source Code Pro', monospace;" id="inp" type="text" placeholder="New Task Here">
+             <img id="add-icon"  width="30px" height="30px" src="add icon.png">
+            </div>
+            <div id="no-input">
+                
+            </div>
+            <div class="dropdown">
+              <button class="col-6 col-md-6 col-sm-6 view-tasks dropbtn" onclick="">View Tasks<svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                 </svg>
+               </button>
+              
+              <div id="myDropdown" class="dropdown-content">
+                <ul id="the-list">
+                   <li>My Tasks</li>
+                   
+                </ul>
+                <div id="notasks">
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+ <script src="to-do-script.js" ></script>
+</body>
+</html>
